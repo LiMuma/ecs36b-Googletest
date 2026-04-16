@@ -11,9 +11,9 @@
 
 int main(int argc, char* argv[]){
 
-  int* given_numbers;
+  int* given_numbers=nullptr;
   int len;
-  parse_args(argc, argv, given_numbers, &len);
+  parse_args(argc, argv, &given_numbers, &len);
   int* sorted_ar = get_sorted(given_numbers, len);
 
   printf("The numbers you entered are: ");
